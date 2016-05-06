@@ -8,9 +8,5 @@ public class DontAsk {
         WindowView window = new WindowView();
         me.showOn(window);
         window.show();
-        
-        HtmlView html = new HtmlView();
-        me.showOn(html);
-        html.show();
     }
 }

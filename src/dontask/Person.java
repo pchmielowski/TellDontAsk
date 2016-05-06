@@ -10,7 +10,11 @@ public class Person {
         this.surname = surname;
     }
 
+    public void sayHello() {
+        System.out.println("Hello, " + name);
+    }
+
     public void showOn(View view) {
-        view.addPerson(name, surname);
+        view.addPerson(name, surname, new SayHelloCommand(this));
     }
 }
